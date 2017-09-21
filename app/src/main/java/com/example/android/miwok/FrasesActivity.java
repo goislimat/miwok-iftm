@@ -26,7 +26,7 @@ public class FrasesActivity extends AppCompatActivity {
         palavras.add(new Palavra("vamos", "yoowutis"));
         palavras.add(new Palavra("venha aqui", "әnni'nem"));
 
-        PalavraAdapter itensAdapter = new PalavraAdapter(this, palavras);
+        PalavraAdapter itensAdapter = new PalavraAdapter(this, palavras, R.color.categoria_frases);
 
         ListView listView = (ListView) findViewById(R.id.list);
 

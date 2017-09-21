@@ -26,7 +26,7 @@ public class FamiliaActivity extends AppCompatActivity {
         palavras.add(new Palavra("avó", "ama", R.drawable.family_grandmother));
         palavras.add(new Palavra("avô", "paapa", R.drawable.family_grandfather));
 
-        PalavraAdapter itensAdapter = new PalavraAdapter(this, palavras);
+        PalavraAdapter itensAdapter = new PalavraAdapter(this, palavras, R.color.categoria_familia);
 
         ListView listView = (ListView) findViewById(R.id.list);
 

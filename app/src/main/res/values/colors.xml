@@ -8,4 +8,6 @@
     <color name="categoria_familia">#379237</color>
     <color name="categoria_cores">#8800A0</color>
     <color name="categoria_frases">#16AFCA</color>
+
+    <color name="palida">#FFF7DA</color>
 </resources>

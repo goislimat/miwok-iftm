@@ -26,7 +26,7 @@ public class NumerosActivity extends AppCompatActivity {
         palavras.add(new Palavra("nove", "wo’e", R.drawable.number_nine));
         palavras.add(new Palavra("dez", "na’aacha", R.drawable.number_ten));
 
-        PalavraAdapter itensAdapter = new PalavraAdapter(this, palavras);
+        PalavraAdapter itensAdapter = new PalavraAdapter(this, palavras, R.color.categoria_numeros);
 
         ListView listView = (ListView) findViewById(R.id.list);
 

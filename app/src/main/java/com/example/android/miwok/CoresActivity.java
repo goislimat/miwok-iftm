@@ -24,7 +24,7 @@ public class CoresActivity extends AppCompatActivity {
         palavras.add(new Palavra("amarelo areia", "ṭopiisә", R.drawable.color_dusty_yellow));
         palavras.add(new Palavra("amarelo mostarda", "chiwiiṭә", R.drawable.color_mustard_yellow));
 
-        PalavraAdapter itensAdapter = new PalavraAdapter(this, palavras);
+        PalavraAdapter itensAdapter = new PalavraAdapter(this, palavras, R.color.categoria_cores);
 
         ListView listView = (ListView) findViewById(R.id.list);
 

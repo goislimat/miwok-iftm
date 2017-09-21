@@ -8,9 +8,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+
+import static com.example.android.miwok.R.id.miwok;
 
 /**
  * Created by goisl on 14/09/2017.
@@ -18,8 +21,12 @@ import java.util.ArrayList;
 
 public class PalavraAdapter extends ArrayAdapter<Palavra> {
 
-    public PalavraAdapter(Activity context, ArrayList<Palavra> palavras) {
+    private int mCorFundo;
+
+    public PalavraAdapter(Activity context, ArrayList<Palavra> palavras,
+                          int corFundo) {
         super(context, 0, palavras);
+        mCorFundo = corFundo;
     }
 
     @NonNull
@@ -32,6 +39,10 @@ public class PalavraAdapter extends ArrayAdapter<Palavra> {
         }
 
         Palavra palavraAtual = getItem(position);
+
+        LinearLayout layout = (LinearLayout) itemListaView
+                .findViewById(R.id.container_global);
+        layout.setBackgroundResource(mCorFundo);
 
         TextView miwok = (TextView) itemListaView.findViewById(R.id.miwok);
         miwok.setText(palavraAtual.getTraducaoMiwok());
