@@ -10,8 +10,12 @@ public class Palavra {
     private String mTraducaoMiwok;
     private int mReferenciaImagem;
 
-    public Palavra(String traducaoPadrao, String traducaoMiwok,
-                   int referenciaImagem) {
+    public Palavra(String traducaoPadrao, String traducaoMiwok) {
+        mTraducaoPadrao = traducaoPadrao;
+        mTraducaoMiwok = traducaoMiwok;
+    }
+
+    public Palavra(String traducaoPadrao, String traducaoMiwok, int referenciaImagem) {
         mTraducaoPadrao = traducaoPadrao;
         mTraducaoMiwok = traducaoMiwok;
         mReferenciaImagem = referenciaImagem;
