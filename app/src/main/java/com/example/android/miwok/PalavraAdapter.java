@@ -40,7 +40,13 @@ public class PalavraAdapter extends ArrayAdapter<Palavra> {
         padrao.setText(palavraAtual.getTraducaoPadrao());
 
         ImageView imagem = (ImageView) itemListaView.findViewById(R.id.container_imagem);
-        imagem.setImageResource(palavraAtual.getReferenciaImagem());
+        if(palavraAtual.hasImagem()) {
+            imagem.setImageResource(palavraAtual.getReferenciaImagem());
+            imagem.setVisibility(View.VISIBLE);
+        } else {
+            imagem.setVisibility(View.GONE);
+        }
+
 
         return itemListaView;
     }

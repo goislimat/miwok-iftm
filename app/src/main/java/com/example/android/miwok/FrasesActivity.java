@@ -15,16 +15,16 @@ public class FrasesActivity extends AppCompatActivity {
 
         ArrayList<Palavra> palavras = new ArrayList<>();
 
-        palavras.add(new Palavra("onde você está indo?", "minto wuksus", R.mipmap.ic_launcher));
-        palavras.add(new Palavra("qual o seu nome?", "tinnә oyaase'nә", R.mipmap.ic_launcher));
-        palavras.add(new Palavra("meu nome é...", "oyaaset...", R.mipmap.ic_launcher));
-        palavras.add(new Palavra("como está se sentindo?", "michәksәs?", R.mipmap.ic_launcher));
-        palavras.add(new Palavra("estou me sentindo bem", "kuchi achit", R.mipmap.ic_launcher));
-        palavras.add(new Palavra("você está vindo?", "әәnәs'aa?", R.mipmap.ic_launcher));
-        palavras.add(new Palavra("sim, estou indo", "hәә’ әәnәm", R.mipmap.ic_launcher));
-        palavras.add(new Palavra("estou indo", "әәnәm", R.mipmap.ic_launcher));
-        palavras.add(new Palavra("vamos", "yoowutis", R.mipmap.ic_launcher));
-        palavras.add(new Palavra("venha aqui", "әnni'nem", R.mipmap.ic_launcher));
+        palavras.add(new Palavra("onde você está indo?", "minto wuksus"));
+        palavras.add(new Palavra("qual o seu nome?", "tinnә oyaase'nә"));
+        palavras.add(new Palavra("meu nome é...", "oyaaset..."));
+        palavras.add(new Palavra("como está se sentindo?", "michәksәs?"));
+        palavras.add(new Palavra("estou me sentindo bem", "kuchi achit"));
+        palavras.add(new Palavra("você está vindo?", "әәnәs'aa?"));
+        palavras.add(new Palavra("sim, estou indo", "hәә’ әәnәm"));
+        palavras.add(new Palavra("estou indo", "әәnәm"));
+        palavras.add(new Palavra("vamos", "yoowutis"));
+        palavras.add(new Palavra("venha aqui", "әnni'nem"));
 
         PalavraAdapter itensAdapter = new PalavraAdapter(this, palavras);
 
