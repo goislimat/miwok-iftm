@@ -37,6 +37,8 @@ public class Palavra {
 
     public int getReferenciaImagem() { return mReferenciaImagem; }
 
+    public int getReferenciaAudio() { return mReferenciaAudio; }
+
     public boolean hasImagem() {
         return mReferenciaImagem != SEM_IMAGEM_FORNECIDA;
     }
